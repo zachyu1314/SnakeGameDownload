@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: white;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.download-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 15px 30px;
+  background: #4CAF50;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.download-button:hover {
+  background: #45a049;
+}
+
+/* 游戏截图轮播 */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.game-intro, .instructions {
+  text-align: left;
+  margin-top: 30px;
+}
+
