@@ -11,7 +11,6 @@
     
     <p>欢迎来到 Snake Game 官网！Welcome to Snake Game official download page 🎮</p>
 
-    <!-- 游戏截图轮播 -->
     <div class="slideshow-container">
       <img class="slides" src="screenshots/Screen1.png" alt="游戏截图1">
       <img class="slides" src="screenshots/Screen2.png" alt="游戏截图2">
@@ -23,19 +22,25 @@
       <p>贪吃蛇是一款经典的小游戏，玩家需要控制蛇吃食物，同时避免碰到墙壁和自己。 / Snake Game is a classic game where you control the snake to eat food while avoiding walls and itself.</p>
     </div>
 
-    <!-- 下载按钮 -->
     <a href="downloads/SnakeGame.zip" download class="download-button">
       下载 / Download SnakeGame
+    </a>
+
+    <a href="downloads/SnakeGameChecker.zip" download class="download-button">
+      下载 / Download 系统检测工具
     </a>
 
     <div class="instructions">
       <h2>安装指南 / Installation</h2>
       <p>1️⃣ 下载完成后，将 SnakeGame.app 拖到 Applications 文件夹。 / After download, drag SnakeGame.app to Applications folder.</p>
-      <p>2️⃣ 打开应用，享受游戏！ / Open the app and enjoy the game!</p>
-
-      <h3>⚠️ 如果提示 "文件已损坏" / If you see "App is damaged":</h3>
-      <p>请在终端运行以下命令解除安全限制 / Run this command in Terminal to allow opening:</p>
-      <pre>xattr -rd com.apple.quarantine ~/Downloads/SnakeGame.app</pre>
+      <p>2️⃣ 如果打不开应用（显示“损坏”或“无法打开”），请按以下步骤操作：</p>
+      <pre>
+cd /Applications
+sudo chmod +x SnakeGame.app/Contents/MacOS/SnakeGame
+sudo xattr -r -d com.apple.quarantine SnakeGame.app
+      </pre>
+      <p>3️⃣ 然后双击 SnakeGame.app 即可打开 / Then double-click SnakeGame.app to launch the game.</p>
+      <p>4️⃣ 打开系统检测工具（SnakeGameChecker.app）可以帮助你检查 SFML 和依赖是否正确安装 / You can run SnakeGameChecker.app to check SFML and dependencies.</p>
     </div>
 
   </div>
