@@ -28,15 +28,14 @@
 
     <div class="instructions">
       <h2>安装指南 / Installation</h2>
-      <p>1️⃣ 下载完成后，解压 SnakeGame.zip 到你想放置的文件夹 / After download, unzip SnakeGame.zip to your desired folder.</p>
-      <p>2️⃣ 如果打不开应用（显示“损坏”或“无法打开”），请在终端执行：</p>
+      <p>1️⃣ 下载完成后，解压 SnakeGame.zip 到 ~/Downloads/ 目录。 / After download, unzip SnakeGame.zip into ~/Downloads/</p>
+      <p>2️⃣ 打开终端，输入以下命令给予权限并解除阻止： / Open Terminal and run:</p>
       <pre>
-          cd ~/Downloads/SnakeGame
-          sudo chmod +x SnakeGame.app/Contents/MacOS/SnakeGame
-          sudo xattr -r -d com.apple.quarantine SnakeGame.app
+cd ~/Downloads/SnakeGame
+sudo chmod +x SnakeGame.app/Contents/MacOS/SnakeGame
+sudo xattr -r -d com.apple.quarantine SnakeGame.app
       </pre>
-      <p>3️⃣ 双击 SnakeGame.app 即可打开 / Then double-click SnakeGame.app to launch the game.</p>
-      <p>4️⃣ 使用系统检测工具 SnakeGameChecker.zip 检查 SFML 和依赖是否正确安装 / Use SnakeGameChecker.zip to check SFML and dependencies.</p>
+      <p>3️⃣ 双击 SnakeGame.app 运行游戏！ / Double-click SnakeGame.app to run the game!</p>
     </div>
 
   </div>
