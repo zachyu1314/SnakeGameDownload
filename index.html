@@ -13,9 +13,9 @@
 
     <!-- 游戏截图轮播 -->
     <div class="slideshow-container">
-      <img class="slides" src="screenshots/Screen1.png" alt="游戏截图1">
-      <img class="slides" src="screenshots/Screen2.png" alt="游戏截图2">
-      <img class="slides" src="screenshots/Screen3.png" alt="游戏截图3">
+      <img class="slides" src="screenshots/screen1.png" alt="游戏截图1">
+      <img class="slides" src="screenshots/screen2.png" alt="游戏截图2">
+      <img class="slides" src="screenshots/screen3.png" alt="游戏截图3">
     </div>
 
     <div class="game-intro">
@@ -28,17 +28,14 @@
       下载 / Download SnakeGame
     </a>
 
-    <!-- 检查环境工具按钮 -->
-    <a href="downloads/SnakeGameChecker.zip" download class="download-button env-button">
-      下载 / Download 系统检测工具
-    </a>
-    <p>注意⚠️:首次运行，请在终端执行：<br>
-       <code>chmod +x check_env.sh && ./check_env.sh</code></p>
-
     <div class="instructions">
       <h2>安装指南 / Installation</h2>
       <p>1️⃣ 下载完成后，将 SnakeGame.app 拖到 Applications 文件夹。 / After download, drag SnakeGame.app to Applications folder.</p>
       <p>2️⃣ 打开应用，享受游戏！ / Open the app and enjoy the game!</p>
+
+      <h3>⚠️ 如果提示 "文件已损坏" / If you see "App is damaged":</h3>
+      <p>请在终端运行以下命令解除安全限制 / Run this command in Terminal to allow opening:</p>
+      <pre>xattr -rd com.apple.quarantine ~/Downloads/SnakeGame.app</pre>
     </div>
 
   </div>
